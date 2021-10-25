@@ -5,18 +5,8 @@ import React from 'react';
 function NavTabs({ currentPage, handlePageChange }) {
   return (
   <>
-    <h2 className = "px-1 py-4"> Kevinjr1998 </h2>
+    <h1 className = "px-1 py-4"> Kevinjr1998 </h1>
     <ul className="nav nav-tabs">
-      <li className="nav-item">
-        <a
-          href="#portfolio"
-          onClick={() => handlePageChange('Portfolio')}
-
-          className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
-        >
-          Portfolio
-        </a>
-      </li>
       <li className="nav-item">
         <a
           href="#about"
@@ -26,6 +16,16 @@ function NavTabs({ currentPage, handlePageChange }) {
           className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
         >
           About
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
+          href="#portfolio"
+          onClick={() => handlePageChange('Portfolio')}
+
+          className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+        >
+          Portfolio
         </a>
       </li>
       <li className="nav-item">
