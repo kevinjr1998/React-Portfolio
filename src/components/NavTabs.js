@@ -4,16 +4,17 @@ import React from 'react';
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
+  <>
+    <h2 className = "px-1 py-4"> Kevinjr1998 </h2>
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <a
           href="#portfolio"
           onClick={() => handlePageChange('Portfolio')}
-          //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
 
           className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
         >
-          Home
+          Portfolio
         </a>
       </li>
       <li className="nav-item">
@@ -50,6 +51,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
     </ul>
+    </>
   );
 }
 

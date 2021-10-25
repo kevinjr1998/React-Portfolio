@@ -8,13 +8,12 @@ import Portfolio from './pages/Portfolio';
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
 
-  // TODO: Add a comment describing the functionality of this method
   const renderPage = () => {
-    if (currentPage === 'Portfolio') {
-      return <Portfolio />;
-    }
     if (currentPage === 'About') {
       return <About />;
+    }
+    if (currentPage === 'Portfolio') {
+      return <Portfolio  />;
     }
     if (currentPage === 'Blog') {
       return <Blog />;
