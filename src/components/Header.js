@@ -5,8 +5,8 @@ import NavBar from './NavBar';
 function HeaderComp({ currentPage, handlePageChange }) {
   return (
   <>
-  <header>
-    <h1 className = "px-1 py-4"> Kevinjr1998 </h1>
+  <header style = {{ backgroundColor: "#291F1E"}}>
+    <h1 className = "px-1 py-4" style = {{color: "white"}}> Kevinjr1998 </h1>
 
     <NavBar currentPage = {currentPage} handlePageChange = {handlePageChange}/>
 

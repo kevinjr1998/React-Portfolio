@@ -8,7 +8,7 @@ export default function FooterComp() {
 
     return (
         <>
-          <footer className="d-flex justify-content-center align-content-center border rounded p">
+          <footer style = {{backgroundColor: "#291F1E", color: "white"}} className="d-flex justify-content-center align-content-center border rounded p">
             <h3 className="px-2"> GitHub:  </h3>
             <a href = "https://github.com/kevinjr1998" target="_blank" rel = "noreferrer"   ><img src={gitHubLogo} className="img-fluid rounded " alt="GitHub Logo" style ={{width: 60, aspectRatio: 3/2}}></img></a>
 
