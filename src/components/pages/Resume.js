@@ -3,7 +3,7 @@ import CV from "../CV/Kevin_Ryner_CV.pdf"
 
 export default function Resume() {
 
-  const frontEndTech = ["Bootstrap", "JavaScript", "HTML", "ReactJS", "Handlebars", ]
+  const frontEndTech = ["Bootstrap", "JavaScript", "HTML", "ReactJS", "Handlebars", "Responsive Design" ]
 
 
 
