@@ -32,12 +32,28 @@ function Contact() {
     e.preventDefault();
 
     // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
-    if (!validateEmail(email) || !userName || !message) {
-      setErrorMessage('Please enter a name, email and message');
+    if (!validateEmail(email)) {
+      setErrorMessage('Please enter a valid email');
       // We want to exit out of this code block if something is wrong so that the user can correct it
       return;
-      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+
     }
+
+    if ( !userName ) {
+      setErrorMessage('Please enter a name');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+
+    }
+
+    if ( !message ) {
+      setErrorMessage('Please enter a message');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+
+    }
+
+
     alert(`Message has been sent!`);
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
@@ -47,8 +63,8 @@ function Contact() {
   };
 
   return (
-    <div className = "d-inline-flex flex-wrap flex-column p-2 ">
-      <p className = "p-2">Hello</p>
+    <div className = "d-inline-flex flex-wrap flex-column px-5 w-90">
+      <h3 className = "p-2">Contact Page</h3>
       <form className="form d-inline-flex flex-wrap flex-column w-90 ">
         <div className = "form-group p-2"> 
         <label htmlFor="nameInput"> Enter Your Name</label>
@@ -92,8 +108,8 @@ function Contact() {
         <button type="button" className = "btn btn-primary" onClick={handleFormSubmit}>Submit</button>
       </form>
       {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
+        <div className = "py-2">
+          <p className="error-text text-danger">{errorMessage}</p>
         </div>
       )}
         <br />

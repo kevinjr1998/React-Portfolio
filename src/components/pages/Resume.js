@@ -10,7 +10,7 @@ export default function Resume() {
 
 
   return (
-    <div>
+    <div className = "px-5">
       <h3 className = "p-2 ">My Resume </h3>
       <a href={CV} className = "p-2 " download="Kevin_Ryner_CV.pdf"> <button className = "p-2 btn btn-primary text-center"> Click to Download My CV</button></a>
 

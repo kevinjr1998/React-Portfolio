@@ -4,7 +4,7 @@ import {React} from "react"
 function NavBar({ currentPage, handlePageChange }){
 return (
     <ul className="nav nav-tabs d-flex flex-wrap">
-      <li className="nav-item">
+      <li className="nav-item mx-5">
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
@@ -14,7 +14,7 @@ return (
           About
         </a>
       </li>
-      <li className="nav-item">
+      <li className="nav-item mx-5">
         <a
           href="#portfolio"
           onClick={() => handlePageChange('Portfolio')}
@@ -24,7 +24,7 @@ return (
           Portfolio
         </a>
       </li>
-      <li className="nav-item">
+      <li className="nav-item mx-5">
         <a
           href="#resume"
           onClick={() => handlePageChange('Resume')}
@@ -34,7 +34,7 @@ return (
           Resume
         </a>
       </li>
-      <li className="nav-item">
+      <li className="nav-item mx-5">
         <a
           href="#contact"
 
