@@ -1,9 +1,34 @@
 import React from 'react';
+import CV from "../CV/Kevin_Ryner_CV.pdf"
 
-export default function Blog() {
+export default function Resume() {
+
+  const frontEndTech = ["Bootstrap", "JavaScript", "HTML", "ReactJS", "Handlebars", ]
+
+
+
+
+
   return (
     <div>
-      <h1>Blog Page</h1>
+      <h3 className = "p-2 ">My Resume </h3>
+      <a href={CV} className = "p-2 " download="Kevin_Ryner_CV.pdf"> <button className = "p-2 btn btn-primary text-center"> Click to Download My CV</button></a>
+
+      <h3 className = "p-2 ">Front end proficiencies </h3>
+
+      <ul >{
+        frontEndTech.map((entry, index) => {
+          return (
+            <li key = {index}> {entry}</li>
+          )
+        })
+        
+        }
+      </ul>
+
+
+
+
       <p>
         Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
         Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu

@@ -1,9 +1,51 @@
 import React, { useState } from 'react';
-import NavTabs from './NavTabs';
+import HeaderComp from './Header';
 import About from './pages/About';
-import Blog from './pages/Blog';
+import Resume from './pages/Resume';
 import Contact from './pages/Contact';
-import Portfolio from './pages/Portfolio';
+import Project from './pages/Project';
+import FooterComp from './FooterComp'
+
+import my5SLocal from './images/my5StarLocal.gif'
+import techBlog from './images/techBlogGif.gif'
+import weatherDash from './images/Weather_Dashboard.gif'
+import budgetTracker from './images/Budget_Tracker.gif'
+import noteTaker from './images/Note_Taker_Screenshot.png'
+
+
+const portCards = [{
+  title: 'My 5STAR Local',
+  image: my5SLocal,
+  appLink: 'https://vast-journey-10843.herokuapp.com/',
+  repoLink: 'https://github.com/kevinjr1998/My-5-Star-Local' ,
+},
+{
+  title: 'Tech Blog',
+  image: techBlog,
+  appLink: 'https://peaceful-basin-57768.herokuapp.com/',
+  repoLink: 'https://github.com/kevinjr1998/Tech_Blog' ,
+},
+{
+  title: 'Weather Dashboard',
+  image: weatherDash,
+  appLink: 'https://kevinjr1998.github.io/Weather_Dashboard/',
+  repoLink: 'https://github.com/kevinjr1998/Weather_Dashboard' ,
+},
+{
+  title: 'Budget Tracker',
+  image: budgetTracker,
+  appLink: 'https://pacific-lowlands-14349.herokuapp.com/',
+  repoLink: 'https://github.com/kevinjr1998/Budget_Tracker' ,
+},
+{
+  title: 'Note Taker',
+  image: noteTaker,
+  appLink: 'https://stark-headland-34041.herokuapp.com/',
+  repoLink: 'https://github.com/kevinjr1998/Note_Taker' ,
+},
+];
+
+
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -13,10 +55,10 @@ export default function PortfolioContainer() {
       return <About />;
     }
     if (currentPage === 'Portfolio') {
-      return <Portfolio  />;
+      return <Project  portCards = {portCards} />;
     }
-    if (currentPage === 'Blog') {
-      return <Blog />;
+    if (currentPage === 'Resume') {
+      return <Resume />;
     }
     return <Contact />;
   };
@@ -25,10 +67,9 @@ export default function PortfolioContainer() {
 
   return (
     <div>
-      {/* // TODO: Add a comment describing what we are passing as props */}
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* // TODO: Add a comment explaining what is happening on the following line */}
+      <HeaderComp currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
+      <FooterComp />    
     </div>
   );
 }

@@ -1,17 +1,16 @@
 import React from 'react';
 
-// TODO: Add a comment explaining how we are able to extract the key value pairs from props
 
-function NavTabs({ currentPage, handlePageChange }) {
+function HeaderComp({ currentPage, handlePageChange }) {
   return (
   <>
+  <header>
     <h1 className = "px-1 py-4"> Kevinjr1998 </h1>
-    <ul className="nav nav-tabs">
+    <ul className="nav nav-tabs d-flex flex-wrap">
       <li className="nav-item">
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
-          //  TODO: Add a comment explaining what this logic is doing
 
           className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
         >
@@ -30,13 +29,13 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
       <li className="nav-item">
         <a
-          href="#blog"
-          onClick={() => handlePageChange('Blog')}
+          href="#resume"
+          onClick={() => handlePageChange('Resume')}
           //  TODO: Add a comment explaining what this logic is doing
 
-          className={currentPage === 'Blog' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
         >
-          Blog
+          Resume
         </a>
       </li>
       <li className="nav-item">
@@ -51,8 +50,9 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
     </ul>
+    </header>
     </>
   );
 }
 
-export default NavTabs;
+export default HeaderComp;
