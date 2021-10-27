@@ -3,9 +3,9 @@ import CV from "../CV/Kevin_Ryner_CV.pdf"
 
 export default function Resume() {
 
-  const frontEndTech = ["Bootstrap", "JavaScript", "HTML", "ReactJS", "Handlebars", "Responsive Design" ]
+  const frontEndTech = ["Bootstrap", "JavaScript", "HTML", "ReactJS", "Handlebars", "Responsive Design", "jQuery", "Tailwind" ]
 
-
+  const backEndtech = ["Node.js", "MySQL, Sequelize", "MongoDB, Mongoose", "GraphQL", "Express", ]
 
 
 
@@ -14,7 +14,7 @@ export default function Resume() {
       <h3 className = "p-2 ">My Resume </h3>
       <a href={CV} className = "p-2 " download="Kevin_Ryner_CV.pdf"> <button className = "p-2 btn btn-primary text-center"> Click to Download My CV</button></a>
 
-      <h3 className = "p-2 ">Front end proficiencies </h3>
+      <h3 className = "p-2 ">Front-End Proficiencies </h3>
 
       <ul >{
         frontEndTech.map((entry, index) => {
@@ -26,24 +26,18 @@ export default function Resume() {
         }
       </ul>
 
+      <h3 className = "p-2 ">Back-End Proficiencies </h3>
+      <ul>
+        {
+          backEndtech.map((entry, index) => {
+            return (
+              <li key = {index}> {entry}</li>
+            )
+          })
+        }
+      </ul>
 
 
-
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
     </div>
   );
 }

@@ -96,6 +96,12 @@ function Contact() {
           <p className="error-text">{errorMessage}</p>
         </div>
       )}
+        <br />
+        <div className = " d-flex flex-wrap">
+            <p className = "p-2 text-center"> Mobile Number: 07597 087862 </p>
+            <p className = "p-2 text-center"> Email: <a href="mailto:kevinryner@yahoo.co.uk"> kevinryner@yahoo.co.uk </a></p>
+        </div>
+        
     </div>
   );
 }

@@ -28,7 +28,6 @@ return (
         <a
           href="#resume"
           onClick={() => handlePageChange('Resume')}
-          //  TODO: Add a comment explaining what this logic is doing
 
           className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
         >
@@ -38,7 +37,6 @@ return (
       <li className="nav-item">
         <a
           href="#contact"
-          //  TODO: Add a comment explaining what this logic is doing
 
           onClick={() => handlePageChange('Contact')}
           className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
