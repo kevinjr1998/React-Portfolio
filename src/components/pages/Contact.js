@@ -27,30 +27,68 @@ function Contact() {
     }
   };
 
+
+  function emailValidate(e) {
+    e.preventDefault();
+
+
+    if (!validateEmail){
+      return false;
+    }
+  }
+
+  function nameValidate(e){
+    e.preventDefault();
+
+    if ( !userName ) {
+      setErrorMessage('Please enter a name');
+      return false;
+    }
+  }
+
+  function messageValidate(e){
+    e.preventDefault();
+
+    if ( !message ) {
+      setErrorMessage('Please enter a message');
+      return false;
+    }
+  }
+
+
+  const handleFormValidation = () => {
+
+    if (validateEmail) {
+      setErrorMessage('Please enter a valid email');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return false;
+
+    }
+
+    if (!userName) {
+      setErrorMessage('Please enter a name');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return false;
+
+    }
+
+    if (!message ) {
+      setErrorMessage('Please enter a message');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return false;
+
+    }
+
+    return true;
+  }
+
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
-    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
-    if (!validateEmail(email)) {
-      setErrorMessage('Please enter a valid email');
-      // We want to exit out of this code block if something is wrong so that the user can correct it
+
+    if (!handleFormValidation()){
       return;
-
-    }
-
-    if ( !userName ) {
-      setErrorMessage('Please enter a name');
-      // We want to exit out of this code block if something is wrong so that the user can correct it
-      return;
-
-    }
-
-    if ( !message ) {
-      setErrorMessage('Please enter a message');
-      // We want to exit out of this code block if something is wrong so that the user can correct it
-      return;
-
     }
 
 
@@ -60,6 +98,7 @@ function Contact() {
     setUserName('');
     setMessage('');
     setEmail('');
+    setErrorMessage('');
   };
 
   return (
@@ -73,6 +112,7 @@ function Contact() {
           name="userName"
           className = "form-control"
           onChange={handleInputChange}
+          onBlur={nameValidate}
           type="text"
           id="nameInput"
           placeholder="Name "
@@ -86,6 +126,7 @@ function Contact() {
           className = "form-control"
           name="email"
           onChange={handleInputChange}
+          onBlur={emailValidate}
           type="email"
           id = "emalInput"
           placeholder="Email"
@@ -99,6 +140,7 @@ function Contact() {
           name="message"
           className = "form-control"
           onChange={handleInputChange}
+          onBlur={messageValidate}
           type="text"
           id="messageInput"
           placeholder="Enter A Message"

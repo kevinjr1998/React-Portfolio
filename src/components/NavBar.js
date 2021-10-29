@@ -26,12 +26,12 @@ return (
       </li>
       <li className="nav-item mx-5">
         <a
-          href="#resume"
-          onClick={() => handlePageChange('Resume')}
+          href="#CV"
+          onClick={() => handlePageChange('CV')}
 
-          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'CV' ? 'nav-link active' : 'nav-link'}
         >
-          Resume
+          CV
         </a>
       </li>
       <li className="nav-item mx-5">
