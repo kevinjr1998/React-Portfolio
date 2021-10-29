@@ -102,7 +102,7 @@ function Contact() {
   };
 
   return (
-    <div className = "d-inline-flex flex-wrap flex-column px-5 w-90">
+    <div className = "d-inline-flex flex-wrap flex-column px-5 min-vh-100">
       <h3 className = "p-2">Contact Page</h3>
       <form className="form d-inline-flex flex-wrap flex-column w-90 ">
         <div className = "form-group p-2"> 

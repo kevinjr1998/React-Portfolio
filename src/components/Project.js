@@ -2,8 +2,8 @@ export default function Project({portCards}){
 
     const styles = {
         cardStyles: {
-          width : '35rem',
-          height: '30rem',
+          width : '40rem',
+          height: '35rem',
         }
       }
 
@@ -13,13 +13,13 @@ export default function Project({portCards}){
         {portCards.map((cardData, index) => {
           return (
           <>
-        <div key = {index} style = {styles.cardStyles}  className=" card bg-light d-inline-flex flex-column justify-content-center allign-self-center align-items-center border rounded m-3">
-        <h1 className="display-4">{cardData.title}</h1>
-        <img src={cardData.image}  className="img-fluid img-thumbnail" alt="My-5-Star-Local"></img>
-          <div className="d-inline-flex flex-column align-items-center">
-           <a target= "_blank" rel='noreferrer' className="btn btn-primary m-2" href={cardData.repoLink}> Link to GitHub Repository </a>
-           <a target= "_blank" rel='noreferrer' className="btn btn-primary m-2" href={cardData.appLink}> Link to Deployed Application</a>
-        </div>
+        <div key = {index} style = {styles.cardStyles}  className=" card bg-light d-inline-flex flex-column justify-content-center align-self-center align-items-center border rounded m-3 ">
+        <h1 className="display-4 text-center">{cardData.title}</h1>
+        <img src={cardData.image}  className="img-fluid d-flex img-thumbnail" alt="My-5-Star-Local"></img>
+          <div className="card-body d-inline-flex flex-column justify-content-center">
+           <a target= "_blank" rel='noreferrer' className=" text-center btn btn-primary m-2" href={cardData.repoLink}> Link to GitHub Repository </a>
+           <a target= "_blank" rel='noreferrer' className=" text-center btn btn-primary m-2" href={cardData.appLink}> Link to Deployed Application</a>
+           </div>
         </div>
         </>
           )

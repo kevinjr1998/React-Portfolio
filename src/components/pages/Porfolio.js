@@ -6,6 +6,7 @@ import techBlog from '../images/techBlogGif.gif'
 import weatherDash from '../images/Weather_Dashboard.gif'
 import budgetTracker from '../images/Budget_Tracker.gif'
 import noteTaker from '../images/Note_Taker_Screenshot.png'
+import workoutTracker from '../images/Fitness_Tracker.gif'
 
 export default function Portfolio() {
 
@@ -40,12 +41,20 @@ export default function Portfolio() {
     appLink: 'https://stark-headland-34041.herokuapp.com/',
     repoLink: 'https://github.com/kevinjr1998/Note_Taker' ,
   },
+  {
+    title: "Workout Tracker",
+    image: workoutTracker,
+    appLink: "https://dry-citadel-64212.herokuapp.com",
+    repoLink: "https://github.com/kevinjr1998/Workout_Tracker",
+  }
   ];
 
   return (
     <>
     <h2 className = "p-2 ">Portfolio page</h2> 
+    <div className = "d-inline-flex flex-column align-self-center justify-content-center">
     <Project portCards={portCards} />
+    </div>
   </>
   );
   
