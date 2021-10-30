@@ -3,7 +3,7 @@ import CVFile from "../CV/Kevin_Ryner_CV.pdf"
 
 export default function CV() {
 
-  const frontEndTech = ["Bootstrap", "JavaScript", "HTML","CSS",  "ReactJS", "Handlebars", "Responsive Design", "jQuery", "Tailwind" ]
+  const frontEndTech = ["React", "JavaScript", "HTML","CSS", "Handlebars", "Responsive Design","Bootstrap", "jQuery", "Tailwind" ]
 
   const backEndtech = ["Node.js", "MySQL, Sequelize", "MongoDB, Mongoose", "GraphQL", "Express", ]
 

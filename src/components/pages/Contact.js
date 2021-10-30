@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 // Here we import a helper function that will check if the email is valid
-import validateEmail  from '../utils/helpers';
+import validateEmail from '../utils/helpers';
 
 function Contact() {
   // Create state variables for the fields in the form
@@ -31,10 +31,11 @@ function Contact() {
   function emailValidate(e) {
     e.preventDefault();
 
-
-    if (!validateEmail){
+    if (!validateEmail(email)){
+      setErrorMessage('Please enter a valid email')
       return false;
     }
+    return true;
   }
 
   function nameValidate(e){
@@ -44,6 +45,7 @@ function Contact() {
       setErrorMessage('Please enter a name');
       return false;
     }
+    return true;
   }
 
   function messageValidate(e){
@@ -53,12 +55,13 @@ function Contact() {
       setErrorMessage('Please enter a message');
       return false;
     }
+    return true;
   }
 
 
   const handleFormValidation = () => {
 
-    if (validateEmail) {
+    if (!validateEmail(email)) {
       setErrorMessage('Please enter a valid email');
       // We want to exit out of this code block if something is wrong so that the user can correct it
       return false;
@@ -83,7 +86,6 @@ function Contact() {
   }
 
   const handleFormSubmit = (e) => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
 
