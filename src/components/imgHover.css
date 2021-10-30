@@ -1,6 +1,14 @@
-.smLink:hover
+.smLink:hover, .card:hover
 {
 -moz-box-shadow: 0 0 5px 5px rgb(221, 221, 221);
 -webkit-box-shadow: 0 0 5px 5px rgb(221, 221, 221);
 box-shadow: 0 0 5px 5px rgb(91, 91, 92);
+transition-timing-function: ease-in-out;
+transition-duration: .25s;
 }
+
+.smLink, .card{
+    transition-timing-function: ease-in-out;
+    transition-duration: .25s;
+}
+

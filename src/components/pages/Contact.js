@@ -104,8 +104,8 @@ function Contact() {
   };
 
   return (
-    <div className = "d-inline-flex flex-wrap flex-column px-5 min-vh-100">
-      <h3 className = "p-2">Contact Page</h3>
+    <div className = "d-inline-flex flex-wrap flex-column px-3 ">
+      <h2 className = "p-2">Contact Page</h2>
       <form className="form d-inline-flex flex-wrap flex-column w-90 ">
         <div className = "form-group p-2"> 
         <label htmlFor="nameInput"> Enter Your Name</label>
@@ -149,14 +149,13 @@ function Contact() {
           rows = "3"
         />
         </div>
-        <button type="button" className = "btn btn-primary" onClick={handleFormSubmit}>Submit</button>
+        <button type="button" className = "btn btn-primary m-2" onClick={handleFormSubmit}>Submit</button>
       </form>
       {errorMessage && (
-        <div className = "py-2">
+        <div className = "p-2">
           <p className="error-text text-danger">{errorMessage}</p>
         </div>
       )}
-        <br />
         <div className = " d-flex flex-wrap">
             <p className = "p-2 text-center"> Mobile Number: 07597 087862 </p>
             <p className = "p-2 text-center"> Email: <a href="mailto:kevinryner@yahoo.co.uk"> kevinryner@yahoo.co.uk </a></p>

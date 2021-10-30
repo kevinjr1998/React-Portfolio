@@ -11,7 +11,7 @@ export default function CV() {
 
   return (
     <div style = {{ backgroundColor: "#6CD9FC"}} className = "px-3">
-      <h3 className = "p-2 ">My CV </h3>
+      <h2 className = "p-2 ">My CV </h2>
       <a href={CVFile} className = "p-2 " download="Kevin_Ryner_CV.pdf"> <button className = "p-2 btn btn-primary text-center"> Click to Download My CV</button></a>
 
       <h3 className = "p-2 ">Front-End Proficiencies </h3>

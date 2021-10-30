@@ -4,7 +4,7 @@ import headshot from '../images/headshot.jpg'
 export default function About() {
   return (
     <div className = "px-3 d-flex flex-wrap">
-      <h3 className= "py-2">About Page</h3>
+      <h2 className= "py-2">About Page</h2>
 
       <div className = "d-inline-flex flex-wrap justify-content-start py-3">
       <img src={headshot} className="img-fluid border rounded d-inline-flex flex-wrap my-3"  style ={{height: 280, aspectRatio: 5/2,  backgroundColor: 'transparent'}} alt="Headshot"/>

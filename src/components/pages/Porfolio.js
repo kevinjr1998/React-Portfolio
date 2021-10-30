@@ -50,8 +50,9 @@ export default function Portfolio() {
   ];
 
   return (
-    <>
-    <h2 className = "p-2 ">Portfolio page</h2> 
+    <>  
+    
+    <h2 className = "p-3 ">Portfolio page</h2> 
     <div className = "d-inline-flex flex-column align-self-center justify-content-center">
     <Project portCards={portCards} />
     </div>

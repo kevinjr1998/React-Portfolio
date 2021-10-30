@@ -4,6 +4,7 @@ export default function Project({portCards}){
         cardStyles: {
           width : '40rem',
           height: '35rem',
+          backgroundColor: "#FFFDD0"
         }
       }
 
@@ -13,7 +14,7 @@ export default function Project({portCards}){
         {portCards.map((cardData, index) => {
           return (
           <>
-        <div key = {index} style = {styles.cardStyles}  className=" card bg-light d-inline-flex flex-column justify-content-center align-self-center align-items-center border rounded m-3 ">
+        <div key = {index} style = {styles.cardStyles}  className=" card d-inline-flex flex-column justify-content-center align-self-center align-items-center border rounded m-3 ">
         <h1 className="display-4 text-center">{cardData.title}</h1>
         <img src={cardData.image}  className="img-fluid d-flex img-thumbnail" alt="My-5-Star-Local"></img>
           <div className="card-body d-inline-flex flex-column justify-content-center">
