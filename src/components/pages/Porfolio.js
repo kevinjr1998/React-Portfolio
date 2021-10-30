@@ -59,7 +59,7 @@ export default function Portfolio() {
     <>  
 
     <h2 className = "p-3 ">Portfolio page</h2> 
-    <div className = "d-inline-flex flex-column align-self-center justify-content-center">
+    <div className = "d-flex flex-wrap">
       {portCards.map((item) =>  (<Project item={item} />))}
     
     </div>
