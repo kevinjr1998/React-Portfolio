@@ -59,8 +59,8 @@ export default function Portfolio() {
     <>  
 
     <h2 className = "p-3 ">Portfolio page</h2> 
-    <div className = "d-flex flex-wrap">
-      {portCards.map((item) =>  (<Project item={item} />))}
+    <div className = "d-flex flex-wrap justify-content-center">
+      {portCards.map((item) =>  (<Project item={item} key={item.id}/>))}
     
     </div>
   </>
