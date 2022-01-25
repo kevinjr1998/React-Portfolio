@@ -6,7 +6,7 @@ import techBlog from '../images/techBlogGif.gif'
 import weatherDash from '../images/Weather_Dashboard.gif'
 import budgetTracker from '../images/Budget_Tracker.gif'
 import noteTaker from '../images/Note_Taker_Screenshot.png'
-import workoutTracker from '../images/Fitness_Tracker.gif'
+import wishlistTracker from '../images/GiftTrackerGif.gif'
 
 export default function Portfolio() {
 
@@ -47,10 +47,10 @@ export default function Portfolio() {
     id: "5",
   },
   {
-    title: "Workout Tracker",
-    image: workoutTracker,
-    appLink: "https://dry-citadel-64212.herokuapp.com",
-    repoLink: "https://github.com/kevinjr1998/Workout_Tracker",
+    title: "MyGiftTracker",
+    image: wishlistTracker,
+    appLink: "https://rocky-reaches-82729.herokuapp.com/",
+    repoLink: "https://github.com/kevinjr1998/MyGiftTracker",
     id: "6",
   }
   ];
