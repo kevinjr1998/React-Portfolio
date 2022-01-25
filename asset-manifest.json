@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/React-Portfolio/static/css/main.86fabc19.chunk.css",
-    "main.js": "/React-Portfolio/static/js/main.518fc437.chunk.js",
-    "main.js.map": "/React-Portfolio/static/js/main.518fc437.chunk.js.map",
+    "main.js": "/React-Portfolio/static/js/main.48880feb.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.48880feb.chunk.js.map",
     "runtime-main.js": "/React-Portfolio/static/js/runtime-main.ec2c277b.js",
     "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.ec2c277b.js.map",
     "static/css/2.0a9ec390.chunk.css": "/React-Portfolio/static/css/2.0a9ec390.chunk.css",
@@ -13,8 +13,8 @@
     "static/css/main.86fabc19.chunk.css.map": "/React-Portfolio/static/css/main.86fabc19.chunk.css.map",
     "static/js/2.24f460b5.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.24f460b5.chunk.js.LICENSE.txt",
     "static/media/Budget_Tracker.22ed1b2c.gif": "/React-Portfolio/static/media/Budget_Tracker.22ed1b2c.gif",
-    "static/media/Fitness_Tracker.4194b64a.gif": "/React-Portfolio/static/media/Fitness_Tracker.4194b64a.gif",
-    "static/media/Kevin_Ryner_CV.1f201803.pdf": "/React-Portfolio/static/media/Kevin_Ryner_CV.1f201803.pdf",
+    "static/media/GiftTrackerGif.c313b4bc.gif": "/React-Portfolio/static/media/GiftTrackerGif.c313b4bc.gif",
+    "static/media/Kevin_Ryner_CV.96025dec.pdf": "/React-Portfolio/static/media/Kevin_Ryner_CV.96025dec.pdf",
     "static/media/Note_Taker_Screenshot.37d7fe9b.png": "/React-Portfolio/static/media/Note_Taker_Screenshot.37d7fe9b.png",
     "static/media/Weather_Dashboard.4aab8b2b.gif": "/React-Portfolio/static/media/Weather_Dashboard.4aab8b2b.gif",
     "static/media/headshot.edbd54c0.jpg": "/React-Portfolio/static/media/headshot.edbd54c0.jpg",
@@ -26,6 +26,6 @@
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.24f460b5.chunk.js",
     "static/css/main.86fabc19.chunk.css",
-    "static/js/main.518fc437.chunk.js"
+    "static/js/main.48880feb.chunk.js"
   ]
 }
